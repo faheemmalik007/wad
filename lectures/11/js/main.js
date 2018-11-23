@@ -3,12 +3,14 @@
 //============================================
 
 
-/*var todos = [];
-function add() {
-    var task = document.getElementById("task").value;
-    todos.push(task);
-    document.getElementById('todos').innerText = todos;
-}*/
+// var todos = [];
+// function add() {
+//     var task = document.getElementById("task").value;
+//     todos.push(task);
+//     document.getElementById('todos').innerText = todos;
+// }
+// whatever we type in search baar it pushes in var todos ...
+
 
 
 //============================================
@@ -16,25 +18,25 @@ function add() {
 //============================================
 
 
-/*var todos = [];
-function add() {
-    var task = document.getElementById('task').value;
-    todos.push(task);
-    document.getElementById('task').value = '';
-    show();
-}
-
-function show() {
-    var ul = document.createElement('ul');
-    ul.classList.add("list-group");
-    for(var i=0; i<todos.length; i++){
-        var li = document.createElement('li');
-        li.innerHTML  = '<li>' + todos[i] + '</li>';
-        li.classList.add("list-group-item");
-        ul.appendChild(li);
-    }
-    document.getElementById('todos').appendChild(ul);
-}*/
+// var todos = [];
+// function add() {
+//     var task = document.getElementById('task').value;
+//     todos.push(task);
+//     document.getElementById('task').value = '';
+//     show();
+// }
+//
+// function show() {
+//     var ul = document.createElement('ul');
+//     ul.classList.add("list-group");
+//     for(var i=0; i<todos.length; i++){
+//         var li = document.createElement('li');
+//         li.innerHTML  = '<li>' + todos[i] + '</li>';
+//         li.classList.add("list-group-item");
+//         ul.appendChild(li);
+//     }
+//     document.getElementById('todos').appendChild(ul);
+// }
 
 
 //============================================
@@ -84,8 +86,8 @@ function show() {
     document.getElementById('todos').appendChild(ul);
 }
 show();
-*/
 
+*/
 
 
 //============================================
