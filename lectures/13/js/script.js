@@ -27,11 +27,41 @@ var quizOver = false;
 displayCurrentQuestion();
 document.getElementById("quiz-message").style.display = 'none';
 function displayNext() {
-    /*Write your code here */
-}
+    if(currentQuestion<2)
+    {
+        var inn=document.querySelector("input[type=radio]:checked");
+        if(inn==null)
+        {
+            var quiz=document.getElementById("quiz-message");
+            quiz.style.display="inline";
+            quiz.innerText='please select an answer';
+            var choice=document.getElementById("choice-list");
+            choice.innerHTML='';
+        }
+        else {
+            if(inn.id===questions[currentQuestion].correctAnswer)
+            {
+                correctAnswers++;
+            }
+            var ChoiceList=document.getElementById("choice-list");
+            ChoiceList.innerHTML='';
+            currentQuestion++;
+        }
+        displayCurrentQuestion();
+    }
+    else {
+        displayScore();
+    }
+    }
 
 function displayCurrentQuestion() {
-    /*Write your code here */
+    var idd=document.getElementById("question");
+    idd.innerHTML='<p>'+questions[currentQuestion].question+'<p>';
+    var ChoiceList1=document.getElementById("choice-list");
+    for(var x=0;x<questions[currentQuestion].choices.length;x++)
+    {
+        ChoiceList1.innerHTML += '<li>'+'<input id=x type="radio" name="ch">'+ questions[currentQuestion].choices[x] +'</li>';
+    }
 }
 
 function resetQuiz() {
